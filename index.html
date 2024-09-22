@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tehran Public Transport Map Simulation</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #map {
+      width: 1580px;
+      height: 900px;
+    }
+    .tooltip {
+      position: absolute;
+      background-color: white;
+      border: 1px solid #999;
+      padding: 5px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tehran Public Transport Map Simulation</h1>
+  <div id="map"></div>
+  <div class="tooltip" id="tooltip"></div>
+
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="simulation.js"></script>
+</body>
+</html>
